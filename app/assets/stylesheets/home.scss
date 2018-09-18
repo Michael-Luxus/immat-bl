@@ -1,0 +1,261 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.backgroundi {
+  background-image: url("/img/bg-img/1.jpg");
+  background-size: cover;
+  background-position: 0px -88px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+.carousel-item h2{
+  color: white;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  background: rgba(49, 1, 1, 0.1);
+  padding: 10px 30px;
+  border-right: 3px solid #fff;
+  font-size: 23px;
+}
+.carousel-item h3{
+  color: white;
+  position: absolute;
+  top: 87px;
+  right: 0px;
+  background: rgba(49, 1, 1, 0.1);
+  padding: 10px 30px 0;
+  border-right: 3px solid #fff;
+  font-size: 23px;
+}
+
+//×××××××××××××××××××××××××××××××××××××××
+.carousel-content1{
+  position: absolute;
+  top: 200px;
+  right: 65px;
+}
+.carousel-content2{
+  position: absolute;
+  top: 200px;
+  right: 65px;
+}
+.carousel-content3{
+  position: absolute;
+  top: 200px;
+  right: 65px;
+}
+.carousel-content4{
+  position: absolute;
+  top: 500px;
+  right: 65px;
+}
+.carousel-content5{
+  position: absolute;
+  top: 500px;
+  right: 65px;
+}
+.carousel-content6{
+  position: absolute;
+  top: 200px;
+  right: 65px;
+}
+.carousel-content7{
+  position: absolute;
+  top: 200px;
+  right: 65px;
+}
+.carousel-content8{
+  position: absolute;
+  top: 200px;
+  right: 65px;
+}
+.carousel-content9{
+  position: absolute;
+  top: 200px;
+  right: 65px;
+}
+.carousel-content10{
+  position: absolute;
+  top: 200px;
+  right: 65px;
+}
+.carousel-content11{
+  position: absolute;
+  top: 200px;
+  right: 65px;
+}
+.carousel-content12{
+  position: absolute;
+  top: 200px;
+  right: 65px;
+}
+.carousel-content13{
+  position: absolute;
+  top: 200px;
+  right: 65px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.whole{
+  position: absolute;
+  z-index: 999;
+  top: 32px;
+  left: 60px;
+}
+
+.logotext h1{
+  position: absolute;
+  color: white;
+  font-size: 21px;
+  top: 44px;
+  font-style: italic;
+  font-weight: bolder;
+  left: 123px;
+  z-index: 55;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-brand:hover{
+  background: none;
+}
+//××××××××××××××××××××××××××××××××××××××××××××××××××××××××
+.lds-grid {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.lds-grid div {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  animation: lds-grid 1.2s linear infinite;
+}
+
+.lds-grid div:nth-child(1) {
+  top: 6px;
+  left: 14px;
+  animation-delay: 0s;
+}
+.lds-grid div:nth-child(2) {
+  top: 6px;
+  left: 28px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(3) {
+  top: 6px;
+  left: 42px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(4) {
+  top: 20px;
+  left: 10px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(5) {
+  top: 20px;
+  left: 24px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(6) {
+  top: 20px;
+  left: 38px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(7) {
+  top: 33px;
+  left: 6px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(8) {
+  top: 33px;
+  left: 20px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(9) {
+  top: 33px;
+  left: 34px;
+  animation-delay: -1.6s;
+}
+@keyframes lds-grid {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+//×××××××××××××××××××××××××××××
+
+
+
+
+a, a:link{
+  list-style: none;
+  text-decoration: none !important;
+}
+
+
+
+#option{
+  display: inline-flex;
+  justify-content: left;
+  width: 100%;
+  margin: auto;
+}
+#option .contact_button{
+  margin: 5px;
+}
+
+.contact_button{
+  background-color: rgba(0, 0, 0, 0.71) !important;
+  color: white !important;
+  padding: 20px 20px 40px 20px !important;
+  border-radius: 50pc !important;
+  margin: 40px;
+}
+.contact_button:hover{
+  background-color: black !important;
+}
+//#option h1{
+//    font-size: 65px;
+//    font-weight: lighter;
+//}
+//.sub_button{
+//    background: #000 !important;
+//    padding: 23px 5px 18px 5px;
+//    border-radius: 50pc;
+//    margin-right: 50px;
+//    left: 0px !important;
+////    position: absolute;
+//}
+.subscribe_background p{
+  color: aliceblue;
+}
+.btn{
+  background-color: #000 !important;
+  color: aliceblue;
+}
+.subscribe_title{
+  color: #555 !important;
+}

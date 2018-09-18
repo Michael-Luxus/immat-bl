@@ -1,0 +1,110 @@
+<div class="gradient-background-overlay"></div>
+
+<!-- Header Area Start -->
+<header class="header-area">
+    <div class="container-fluid h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 h-100">
+                <div class="main-menu h-100">
+                    <nav class="navbar h-100 navbar-expand-lg">
+                        <!-- Logo Area  -->
+                        <a class="navbar-brand" href="/"><img src="../img/core-img/logo.png" alt="Logo"></a>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#studioMenu" aria-controls="studioMenu" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i> Menu</button>
+
+                        <div class="collapse navbar-collapse" id="studioMenu">
+                            <!-- Menu Area Start  -->
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/">Accueil</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about-me.html">A propos</a>
+                                </li>
+
+                                <% if user_signed_in? %>
+                                <% else %>
+
+                                <li class="nav-item">
+                                    <!--                                    <%= link_to "connecter", new_user_session_path, class:"nav-link"  %>-->
+                                </li>
+                                <li class="nav-item">
+                                    <%= link_to "s'inscrir", new_user_registration_path, class:"nav-link" %>
+                                </li>
+                                <% end %>
+
+
+                                <% if user_signed_in? %>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Compte</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="about-me.html">A propos</a>
+                                        <%= link_to "Deconnecter", destroy_user_session_path, method: :delete, class:"dropdown-item" %>
+                                    </div>
+                                </li>
+                                <% end %>
+                            </ul>
+                            <!-- Search Form -->
+                            <div class="header-search-form ml-auto">
+                                <%= form_tag vehicules_path, :method => 'get' do %>
+                                <form action="#">
+                                    <%= text_field_tag :search, params[:search], class:"form-control", placeholder:"Input your keyword then press enter...", id:"search", name:"search", required: true %>
+                                    <input class="d-none" type="submit" value="submit">
+                                    <% end %>
+                                </form>
+                            </div>
+                            <!-- Search btn -->
+                            <div id="searchbtn">
+                                <!--                                <img src="../img/core-img/search.png" alt="">-->
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!--×××××××××××××××××××××××××××××××××××××××××××××-->
+<sky>
+
+
+
+    <div class="form">
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="forceColor"></div>
+        <div class="topbar">
+            <div class="spanColor"></div>
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"input", id:"password", placeholder:"Email" %>
+            <%= f.password_field :password, autocomplete: "current-password", class:"input", id:"password", placeholder:"Mot de passe" %>
+        </div>
+        <button type="submit" class="submit" id="submit" >Connecter</button>
+    </div>
+
+    <div class="err">
+        <%= link_to "Mot de passe oublié?", new_password_path(resource_name), id:"findpass" %>
+    </div>
+
+    <!--
+<div id="messageerror">
+<h1><%= devise_error_messages! %></h1>
+</div>
+-->
+
+
+
+    <!--<% if devise_mapping.rememberable? -%>-->
+    <!--<div class="field">-->
+    <!--<%= f.check_box :remember_me, class:"check" %>-->
+    <!--<%= f.label :remember_me %>-->
+    <!--</div>-->
+    <!--<% end -%>-->
+
+
+    <% end %>
+    <!--<%= render "devise/shared/links" %>-->
+
+
+</sky>

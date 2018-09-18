@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2018-09-06 11:07:48
+  owner_name: MyString
+  N°cin: 1
+  vehicules_type: MyString
+  mark: MyString
+  color: MyString
+  N°engine: MyString
+
+two:
+  date: 2018-09-06 11:07:48
+  owner_name: MyString
+  N°cin: 1
+  vehicules_type: MyString
+  mark: MyString
+  color: MyString
+  N°engine: MyString
